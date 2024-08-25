@@ -67,36 +67,6 @@ The main purpose of this Project Enable users to create and publish posts with t
 - relationship
 - user
 
-## routes
-- use("/api/auth", authRoutes)
-     a) post("/login", login)
-     b) post("/register", register)
-     c) post("/logout", logout)
-  
-- use("/api/users", userRoutes)
-        a) get("/find/:userId", getUser)
-        b) put("/", updateUser)
-  
-- use("/api/posts", postRoutes)
-       a) get("/", getPosts)
-       b) post("/", addPost)
-       c) delete("/:id", deletePost)
-  
-- use("/api/comments", commentRoutes)
-      a) get("/", getComments)
-      b) post("/", addComment)
-      c) delete("/:id", deleteComment)
-  
-- use("/api/likes", likeRoutes)
-     a) get("/", getLikes)
-     b) post("/", addLike)
-     c) delete("/", deleteLike)
-  
-app.use("/api/relationships", relationshipRoutes)
-      a) get("/", getRelationships)
-      b) post("/", addRelationship)
-      c) delete("/", deleteRelationship)
-
 # Start the server and client:
 - In the `server` directory, run:
   ```
